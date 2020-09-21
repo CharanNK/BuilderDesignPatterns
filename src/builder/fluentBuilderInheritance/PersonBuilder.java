@@ -1,7 +1,7 @@
 package builder.fluentBuilderInheritance;
 
 public class PersonBuilder<SELF extends PersonBuilder<SELF>> {
-	Person person = new Person();
+	protected Person person = new Person();
 	
 	//critical to return self here
 	public SELF withName(String name) {
